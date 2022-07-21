@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Warning Rock Band</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d25a402789.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- APLICANDO GRID PARA EL LAYOUT -->
+    <div class="grilla-general">
+        <header class="header">
+            <!-- LOGO -->
+            <figure class="header__logo">
+                <a href="index.html"><img src="./images/the-warning-logo-desktop.png" alt="logo"
+                        class="header__img-desktop"></a>
+
+                <a href="index.html"><img src="./images/the-warning-logo-mobile.png" alt="logo"
+                        class="header__img-mobile"></a>
+            </figure>
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="navbar">
+                <!-- MENU DE NAVEGACION "HAMBURGUESA" -->
+                <label for="menu" class="navbar__menu">
+                    <i class="bx bx-menu"></i>
+                </label>
+                <!-- <input type="checkbox" id="menu" class="navbar__input"> -->
+
+                <!-- BARRA DE NAVEGACIÓN CON FLEXBOX -->
+                <ul class="navbar__links">
+                    <li><a class="navbar__link" href="index.html">inicio</a></li>
+                    <li><a class="navbar__link" href="./sections/biografia.html">biografía</a></li>
+                    <li><a class="navbar__link" href="./sections/discografia.html">discografía</a></li>
+                    <li><a class="navbar__link" href="./sections/imagenes.html">galería</a></li>
+                    <li><a class="navbar__link" href="./sections/contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO DE LA PORTADA -->
+        <section class="contents">
+            <!-- TITULO DE LA PORTADA -->
+            <div class="contents__front">
+                <h1 class="contents__title">the warning</h1>
+                <button class="contents__link">
+                    <a class="contents__cta" href="./sections/biografia.html">Ver más!</a>
+                </button>
+            </div>
+            <!-- ICONOS DE REDES SOCIALES -->
+            <div class="contents__icons">
+                <ul class="icons__flexbox">
+                    <li class="icons__item"><a href="https://www.youtube.com/c/TheWarning/featured" class="icons__cta youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li class="icons__item"><a href="https://open.spotify.com/artist/2SmW1lFlBJn4IfBzBZDlSh" class="icons__cta spotify" target="_blank"><i class="fab fa-spotify"></i></a>
+                    </li>
+                    <li class="icons__item"><a href="https://twitter.com/TheWarningBand2" class="icons__cta twitter" target="_blank"><i
+                                class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li class="icons__item"><a href="https://www.instagram.com/thewarningrockband/" class="icons__cta instagram" target="_blank"><i
+                                class="fab fa-instagram-square"></i></a></li>
+                    <li class="icons__item"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FTheWarningRockBand%2F" class="icons__cta facebook" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <main class="main container">
+            <!-- CONOCIENDO A LOS MIEMBROS DE LA BANDA -->
+            <section class="main__about">
+                <h2 class="main__title">Miembros de The Warning</h2>
+                <!-- APLICANDO FLEXBOX A LA CLASE "MAIN__FLEX-CARDS"-->
+                <div class="main__flex-cards">
+                    <div class="main__card">
+                        <div class="main__face front">
+                            <img src="./images/danielaVillareal.jpg" alt="Daniela Villarreal">
+                            <h3>Daniela Villarreal</h3>
+                        </div>
+                        <div class="main__face back">
+                            <h3>Daniela Villarreal</h3>
+                            <p>Cantante y compositora de rock conocida por ser la guitarrista principal y vocalista de
+                                The Warning, banda con la que interpretó una versión del éxito "Enter Sandman" de la
+                                banda Metallica en el 2015.</p>
+                            <button class="main__link"><a href="https://g.co/kgs/KaAvwR" class="cta" target="_blank">Ver más</a></button>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__face front">
+                            <img src="./images/paulinaVillareal.jpg" alt="Paulina Villarreal">
+                            <h3>Paulina Villarreal</h3>
+                        </div>
+                        <div class="main__face back">
+                            <h3>Paulina Villarreal</h3>
+                            <p>Uno de los rasgos especiales de Paulina es su mente creativa. Su composición suele
+                                comenzar tocando el piano, pero su pasión se basa en la batería. The Warning lanzó su
+                                primer álbum completo, XXI CENTURY BLOOD, a fines de marzo de 2017, donde también cantó
+                                algunas de las canciones, grabó la batería y las pistas de piano.</p>
+                            <button class="main__link"><a href="https://g.co/kgs/812ZYK" class="cta" target="_blank">Ver más</a></button>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__face front">
+                            <img src="./images/alejandraVillareal.jpg" alt="Alejandra Villarreal">
+                            <h3>Alejandra Villarreal</h3>
+                        </div>
+                        <div class="main__face back">
+                            <h3>Alejandra Villarreal</h3>
+                            <p>Intérprete musical mexicana mejor conocida por su trabajo como bajista. Siendo una
+                                apasionada por la música desde temprana edad, ayudó a formar la banda The Warning junto
+                                a sus dos hermanas. A los 10 años de edad, grabó sus primeras canciones y han sido
+                                reconocidas internacionalmente.</p>
+                            <button class="main__link"><a href="https://g.co/kgs/SPqi12" class="cta" target="_blank">Ver más</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION "MAIN__NEWS" -->
+            <section class="main__news">
+                <!-- NUEVA CANCION -->
+                <div class="main__new-song">
+                    <h2>Nuevo sencillo "Money"</h2>
+                    <p>(lanzado el 25 de marzo de 2022)</p>
+                    <iframe class="main__iframe" width="560" height="315"
+                        src="https://www.youtube.com/embed/0QkEtq1yeYQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- SECCION DE PROXIMAS PRESENTACIONES -->
+                <div class="shows">
+                    <h2>próximas presentaciones</h2>
+                    <div class="main__tour">
+                        <div class="list">
+                            <img src="./images/gallery/dany01.webp" alt="">
+                            <div class="list__post-date">
+                                "12"
+                                <span>ene</span>
+                            </div>
+                            <div class="list__item-text">
+                                <h3>Festival de xx xxxx</h3>
+                                <span>Jesus maria, argentina</span>
+                                <div class="list__item-button">
+                                    <a href="">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <img src="./images/gallery/dany02.jpg" alt="">
+                            <div class="list__post-date">
+                                "13"
+                                <span>feb</span>
+                            </div>
+                            <div class="list__item-text">
+                                <h3>Festival de xxxxxxxx</h3>
+                                <span>Jesus maria, argentina</span>
+                                <div class="list__item-button">
+                                    <a href="">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <img src="./images/gallery/ale01.webp" alt="">
+                            <div class="list__post-date">
+                                "14"
+                                <span>mar</span>
+                            </div>
+                            <div class="list__item-text">
+                                <h3>Festival de xxxxxxxx</h3>
+                                <span>Jesus maria, argentina</span>
+                                <div class="list__item-button">
+                                    <a href="">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <img src="./images/gallery/ale02.webp" alt="">
+                            <div class="list__post-date">
+                                "15"
+                                <span>abr</span>
+                            </div>
+                            <div class="list__item-text">
+                                <h3>Festival de xxxxxxxx</h3>
+                                <span>Jesus maria, argentina</span>
+                                <div class="list__item-button">
+                                    <a href="">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <img src="./images/gallery/pau01.webp" alt="">
+                            <div class="list__post-date">
+                                "16"
+                                <span>may</span>
+                            </div>
+                            <div class="list__item-text">
+                                <h3>Festival de xxxxxxxx</h3>
+                                <span>Jesus maria, argentina</span>
+                                <div class="list__item-button">
+                                    <a href="">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <img src="./images/gallery/pau02.jpg" alt="">
+                            <div class="list__post-date">
+                                "17"
+                                <span>jun</span>
+                            </div>
+                            <div class="list__item-text">
+                                <h3>Festival de xxxxxxxx</h3>
+                                <span>Jesus maria, argentina</span>
+                                <div class="list__item-button">
+                                    <a href="">Comprar tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- PIE DE PAGINA -->
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li>©2022 Todos los derechos reservados</li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

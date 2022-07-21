@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía | The Warning</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <!-- APLICANDO GRID PARA EL LAYOUT -->
+    <div class="grilla-general">
+        <!-- LOGO  -->
+        <header class="header">
+            <figure class="header__logo">
+                <a href="../index.html"><img src="../images/the-warning-logo-desktop.png" alt="logo" class="header__img-desktop"></a>
+
+                <a href="index.html"><img src="../images/the-warning-logo-mobile.png" alt="logo"
+                    class="header__img-mobile"></a>
+            </figure>
+            <!-- BARRA DE NAVEGACIÓN-->
+            <nav class="navbar">
+                 <!-- MENU DE NAVEGACION "HAMBURGUESA" -->
+                 <label for="menu" class="navbar__menu">
+                    <i class="bx bx-menu"></i>
+                </label>
+                <!-- <input type="checkbox" id="menu" class="navbar__input"> -->
+
+                <!-- BARRA DE NAVEGACIÓN CON FLEXBOX -->
+                <ul class="navbar__links">
+                    <li><a class="navbar__link" href="../index.html">inicio</a></li>
+                    <li><a class="navbar__link" href="../sections/biografia.html">biografía</a></li>
+                    <li><a class="navbar__link" href="../sections/discografia.html">discografía</a></li>
+                    <li><a class="navbar__link" href="../sections/imagenes.html">galería</a></li>
+                    <li><a class="navbar__link" href="../sections/contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- PORTADA DE LA BIOGRAFIA -->
+        <section class="banner">
+            <!-- BANNER -->
+            <figure class="banner__figure">
+                <img src="../images/bannerBio.jpg" alt="Banner Biografía">
+                <figcaption>Paulina Villareal - Alejandra Villareal - Daniela Villareal</figcaption>
+            </figure>
+        </section>
+        
+        <!-- CONTENIDO DE LA BIOGRAFIA -->
+        <main class="main__bio container">
+            <!-- TEXTO DE LA BIOGRAFIA -->
+            <section class="main__contents">
+                <h1>The Warning: tres hermanas mexicanas que reinventan el rock clásico</h1>
+                <h2  class="title">Biografía</h2>
+                <p>El rock no desapareció ni murió, sólo necesitaba una inyección de adrenalina, que The Warning infunda
+                    directamente al corazón. El trío de hermanas de Monterrey, México, Daniela Villareal «Dany»
+                    [guitarra, voz principal], Paulina Villareal «Pau» [batería, voz, piano] y Alejandra Villarreal
+                    «Ale» [bajo, piano, coros] cargan hacia adelante con riffs que giran la cabeza, ritmos
+                    impredecibles, ritmos del tamaño de un estadio y voces paracaidistas.
+                    Destacan con una presencia extraordinaria así sea en una presentación por TV que ves en tu casa,
+                    como en el escenario del Hell & Heaven Festival. Después de acumular silenciosamente más de 120
+                    millones de visitas en YouTube y 10 millones de streams, así como actuar con todo el mundo, desde
+                    Alice Cooper hasta Def Leppard, se elevan a la vanguardia del hard rock en su debut en LAVA
+                    Records.<br><br>
+                    Inspiradas en AC/DC, Queen, The Killers, Billy Joel, Muse, Elton John y obviamente Metallica, ellas
+                    tocaron durante incontables horas y se presentaron en línea con una versión de <span><a
+                            href="#kiss">«God Gave Rock and Roll to You»</a></span> de Kiss. Estas hermanas rockeras ya
+                    resonaban en redes antes de explotar en todo el
+                    mundo con su cover del clásico de Metallica <span><a href="#enter-sandman">«Enter
+                            Sandman»</a></span> en
+                    2014. Recibió el respaldo de todos, desde la revista Rolling Stone y los mismos Metallica, hasta
+                    <span><a href="#video-tedg">Ellen DeGeneres</a></span>, quien las invitó a su programa donde las
+                    sorprendió con una beca para el programa de verano del Berklee College of Music.
+                </p>
+            </section>
+
+            <!-- SECCION DE VIDEOS COVERS -->
+            <section class="main__flex-container">
+                <div class="main__flex-second">
+                    <div class="main__flex-item">                     
+                        <h3  id="kiss">God Gave Rock and Roll to You - Kiss (Cover)</h3>          
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/C_4Lfd3R2cs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>                   
+                        <p>Publicado el 13 de diciembre de 2012.</p>
+                    </div>
+                    <div class="main__flex-item">
+                        <h3  id="enter-sandman">Enter Sandman - Metallica (Cover)</h3>            
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1boUYB9LFJY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                        <p>Publicado en julio de 2014. Aquí tienen 14, 12 y 9 años</p>
+                    </div>
+                </div>
+
+                <div class="main__flex-second ">
+                    <div class="main__flex-item">
+                        <h3>Hysteria - Muse (Cover)</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fU26wmlF3yg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                        <p>Publicado el 7 agosto de 2015.</p>
+                    </div>
+                    <div class="main__flex-item">
+                        <h3>"Pretender" - Foo Fighters (Cover)</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yjDkAnaTVVY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>               
+                        <p>Publicado el 26 de enero de 2016.</p>
+                    </div>
+                </div>
+
+                <div class="main__flex-second">
+                    <div class="main__flex-item">
+                        <h3>¿Cómo comenzaron las hermanas Villareal de The Warning?</h3>
+                        <p class="modified-text">En aquella visita al programa de <span><a href="#video-tedg">"The Ellen DeGeneres Show"</a></span>, las hermanas
+                        interpretaron “Crazy Train” de Ozzy Osbourne; y tras terminar su presentación, se sentaron
+                        en un sillón comentaron que venían del territorio fronterizo (Monterrey, México) y dejaron
+                        en silencio a la conductora con su asombroso inglés.
+                        Las chicas dijeron que era un sueño hecho realidad estar ahí, y todo lo que estaban
+                        alcanzando con su música.
+                        Por su parte, Danny explicó que desde pequeñas tocaban el piano, y luego un videojuego las
+                        llevó a probar los géneros como el metal y el rock. Ellen las becó con un cheque de 10 mil
+                        dólares, los cuales fueron destinados a un curso de verano de música en Berklee.
+                        </p>
+                    </div>
+
+                    <div class="main__flex-item margin">
+                        <h3 id="video-tedg">The Ellen DeGeneres Show</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JwoEynWlwzg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>                   
+                        <p>Publicado el 24 de abril de 2015.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION DISCOS - APLICO CSS GRID -->
+            <section class="main__cards">
+                <h3>Discos de The Warning</h3>
+                <div class="main__cards-grid">
+                    <figure class="main__figure">
+                        <img src="../images/XXIcenturyblood.jpg" alt="">
+                        <!-- <figcaption>XXI Century Blood</figcaption> -->
+                    </figure>
+                    <div class="main__text-container">
+                        <h4>XXI Century Blood</h4>
+                        <p>Su primer disco lleva el título de XXI Century Blood, y fue lanzado de manera
+                            independiente
+                            en 2017.
+                            Gracias a esta producción compartieron el escenario junto a Alice Cooper, Deep Purple,
+                            Judas
+                            Priest,
+                            The Scorpions, entre otros. También abrieron los conciertos de Def Leppard en México.
+                            Además,
+                            recorrieron los festivales nacionales, como: Corona Hell & Heaven; Force Fest Open Air y
+                            Mother Of
+                            All Rock Festival.
+                        </p>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
+                    </div>
+
+                    <figure class="main__figure grid-position-2">
+                        <img src="../images/queenofthemurderscene.webp" alt="">
+                        <!-- <figcaption>Queen of the Murder Scene</figcaption> -->
+                    </figure>
+                    <div class="main__text-container">
+                        <h4>Queen of the Murder Scene</h4>
+                        <p>Después lanzaron su segundo álbum bajo el nombre de Queen of the Murder Scene donde hacen
+                            un
+                            recorrido por la psique de una mujer con el corazón roto que atraviesa por la
+                            desesperación,
+                            obsesión, violencia, asesinato hasta llegar a su propia muerte. Éste las llevó a
+                            festivales,
+                            como
+                            Rock Al Parque de Bogotá, o el Whisky A Gogo en Hollywood con dos noches atascadas.
+                        </p>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
+                    </div>
+
+                    <figure class="main__figure">
+                        <img src="../images/mayday.jpg" alt="">
+                        <!-- <figcaption>Mayday</figcaption> -->
+                    </figure>
+                    <div class="main__text-container">
+                        <h4>Mayday</h4>
+                        <p>Mayday es el título del EP debut del trío de hermanas mexicanas de Monterrey The Warning.
+                            Producido por David Beneath (Paramore, Bring Me The Horizon, Breaking Benjamin) se
+                            anuncia
+                            como "un aterrador viaje sonoro que nos sumerge en asuntos que afectan a las jóvenes
+                            generaciones sobre el amor, la tecnología, los saltos generacionales, la ansiedad, y la
+                            intensa presión a la que son sometidos para suprimir las emociones".
+                        </p>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
+                    </div>
+
+                    <figure class="main__figure grid-position-4">
+                        <img src="../images/error.jpg" alt="">
+                        <!-- <figcaption>Error</figcaption> -->
+                    </figure>
+                    <div class="main__text-container">
+                        <h4>Error</h4>
+                        <p> Producido por David Beneath, quien es reconocido por su trabajo con Paramore, Bring Me
+                            The
+                            Horizon y Breaking Benjamin, ERROR es un álbum digno de su tiempo, “es un álbum sobre
+                            cómo
+                            percibimos el mundo como generación y cómo experimentamos las cosas en esta nueva era:
+                            amor,
+                            tecnología, vida social, medios, política; como se va perdiendo nuestro sentido de
+                            humanidad
+                            y todo lo demás”, comparte The Warning.
+                        </p>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- PIE DE PAGINA -->
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li>©2022 Todos los derechos reservados</li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

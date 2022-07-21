@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | The Warning</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="body" id="contacto">
+    <!-- APLICANDO GRID PARA EL LAYOUT -->
+    <div class="grilla-general grilla-img-cont">
+        <!-- LOGO  -->
+        <header class="header">
+            <figure class="header__logo">
+                <a href="../index.html"><img src="../images/the-warning-logo-desktop.png" alt="logo"
+                        class="header__img-desktop"></a>
+
+                <a href="index.html"><img src="../images/the-warning-logo-mobile.png" alt="logo"
+                        class="header__img-mobile"></a>
+            </figure>
+            <!-- BARRA DE NAVEGACIÓN-->
+            <nav class="navbar">
+                <!-- MENU DE NAVEGACION "HAMBURGUESA" -->
+                <label for="menu" class="navbar__menu">
+                    <i class="bx bx-menu"></i>
+                </label>
+                <!-- <input type="checkbox" id="menu" class="navbar__input"> -->
+
+                <!-- BARRA DE NAVEGACIÓN CON FLEXBOX -->
+                <ul class="navbar__links">
+                    <li><a class="navbar__link" href="../index.html">inicio</a></li>
+                    <li><a class="navbar__link" href="../sections/biografia.html">biografía</a></li>
+                    <li><a class="navbar__link" href="../sections/discografia.html">discografía</a></li>
+                    <li><a class="navbar__link" href="../sections/imagenes.html">galería</a></li>
+                    <li><a class="navbar__link" href="../sections/contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- CONTENIDO DE CONTACTO -->
+        <main class="main__contacto">
+            <!-- APLICO GRID A LA SECCION "CONT-GRID" -->
+            <section class="main__container-grid">
+                <div>
+                    <img src="../images/twRegistro.jpg" alt="The Warning">
+                </div>
+                <form class="main__form-register">
+                    <h2>Suscribete a nuestro Newsletter</h2>
+                    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+                    <input class="controls" type="phone" name="telefono" id="telefono"
+                        placeholder="Ingrese su telefono">
+                    <label>Reconozco haber leído y estar de acuerdo con la <a href="#">Política de Privacidad</a> y los <a href="#">Términos de Uso</a>.<input type="checkbox" value="acepta" name="condiciones"
+                    required></label>
+                    <input class="botons" type="submit" value="Suscribir">
+                </form>
+            </section>
+        </main>
+
+        <!-- PIE DE PAGINA -->
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li>©2022 Todos los derechos reservados</li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
