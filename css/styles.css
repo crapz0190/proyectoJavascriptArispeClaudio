@@ -121,20 +121,92 @@ body {
 }
 
 .contents__link {
-    width: 150px;
-    height: 50px;
+    width: 210px;
+    height: 60px;
+    padding: 4px;
     margin: 0 auto;
-    border-radius: 50px;
+    border: 1px solid #690041b9;
+    background: #000000c5;
 }
 
-.contents__cta {
+
+.contents__cta-neon {
+    position: relative;
     display: inline-block;
-    background-color: #c9270a;
-    color: #ffffff;
-    width: inherit;
-    height: inherit;
-    line-height: 50px;
-    border-radius: inherit;
+    padding: 15px 30px;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 4px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contents__cta-neon:hover {
+    background: #000000b9;
+    box-shadow: 0 0 3px #690041b9, 0 0 3px #690041b9, 0 0 3px #690041b9;
+    transition-delay: 0.1s;
+}
+
+.contents__cta-neon:hover span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+}
+
+.contents__cta-neon:hover #span1 {
+    left: 100%;
+    transition: 2s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+}
+
+.contents__cta-neon:hover #span2 {
+    top: 100%;
+    transition: 2s;
+    transition-delay: 0.15s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffffff);
+}
+
+.contents__cta-neon:hover #span3 {
+    right: 100%;
+    transition: 2s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffffff);
+}
+
+.contents__cta-neon:hover #span4 {
+    bottom: 100%;
+    transition: 2s;
+    transition-delay: 0.75s;
 }
 
 /* ICONOS DE REDES SOCIALES */
@@ -431,7 +503,7 @@ p {
     }
 
     .back .main__link {
-        background: rgb(54, 6, 3);
+        background: #070707bb;
         width: 100%;
         height: 50px;
         line-height: 50px;
