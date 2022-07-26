@@ -35,7 +35,7 @@ body {
 .contents {
     grid-area: contents;
     height: 95vh;
-    margin-top: 76px;
+    margin-top: 56px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -326,6 +326,10 @@ a {
 }
 
 @media (min-width: 576px) {
+    /* GRID AREA */
+    .contents {
+    margin-top: 66px;
+    }
 
     /* BARRA DE NAVEGACIÓN BOOTSTRAP */
     .container-fluid .collapse .nav-link {
@@ -460,6 +464,10 @@ a {
 }
 
 @media (min-width: 768px) {
+    /* GRID AREA */
+    .contents {
+        margin-top: 76px;
+        }
 
     .container-fluid .collapse .nav-link {
         font-size: 1.75rem;
