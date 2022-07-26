@@ -4,6 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
+:root {
+    --youtube: #ff1111f6;
+    --spotify: #21c521;
+    --twitter: #55acee;
+    --instagram: #ce2342;
+    --facebook: #166fe5;
+
+    --color-title: #e5ff00;
+    --color-p: #f0ce70;
+    --color-button: #41e600b4; 
+}
 
 /* ---------- INICIO ESTILOS DEL INDEX ---------- */
 body {
@@ -13,6 +24,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
 }
 
 /* GRID AREA */
@@ -22,8 +35,7 @@ body {
     background-color: #030303;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -53,6 +65,9 @@ body {
     grid-area: footer;
     background-color: #030303c4;
     height: 95px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* ACOMODANDO POR AREAS */
@@ -119,34 +134,28 @@ body {
     font-size: 3rem;
     text-align: center;
     margin: 0;
+    color: var(--color-title);
 }
 
 .contents__link {
     width: 150px;
     height: 50px;
     margin: 0 auto;
+    background-color: var(--color-button);
     margin-top: 150px;
     border-radius: 50px;
 }
 
 .contents__cta {
-    background-color: #c9270a;
     display: inline-block;
     width: inherit;
     color: #ffffff;
     line-height: 50px;
     border-radius: inherit;
+    margin: 0;
 }
 
 /* ICONOS DE REDES SOCIALES */
-:root {
-    --youtube: #ff1111f6;
-    --spotify: #21c521;
-    --twitter: #55acee;
-    --instagram: #ce2342;
-    --facebook: #166fe5;
-}
-
 .contents__icons {
     text-align: center;
     margin-bottom: 150px;
@@ -168,7 +177,7 @@ body {
 .contents_icons-lists .icons__cta {
     display: block;
     color: #ffffff;
-    line-height: 30px;
+    line-height: 40px;
     font-size: 1.125rem;
     transition: 0.2s;
     border-radius: 30px;
@@ -199,6 +208,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 100px;
 }
 
 .main__about {
@@ -208,6 +218,10 @@ body {
 /* SECCION "MAIN__NEWS" */
 .main__news {
     margin-top: 70px;
+}
+
+.main__news h2, .main__news p {
+    color: var(--color-title);
 }
 
 /* NUEVA CANCION */
@@ -223,11 +237,11 @@ body {
 
 /* SECCION DE PROXIMAS PRESENTACIONES */
 .main__shows h2 {
-    font-size: 1.5rem;
     letter-spacing: 1.5px;
     text-transform: capitalize;
     text-align: center;
     margin-top: 30px;
+    color: var(--color-title);
 }
 
 .main__shows .main__tour {
@@ -300,19 +314,18 @@ body {
 }
 
 .list__item-button a {
-    color: #000000;
+    color: #840096;
     font-weight: 500;
 }
 
 .list__item-button a:hover {
-    color: #af0b0b;
+    color: #ff0000;
 }
 
 /* PIE DE PAGINA */
 .footer__nav ul {
     margin: 0;
     padding: 0;
-    margin-top: 10px;
 }
 
 .footer__nav .terms,
@@ -320,8 +333,9 @@ a {
     color: #ffffff;
     font-size: 0.75rem;
     text-align: center;
-    padding: 5px;
+    margin-top: 10px;
     text-decoration: none;
+    color: var(--color-p);
 }
 
 @media (min-width: 576px) {
@@ -361,6 +375,7 @@ a {
         margin-bottom: 30px;
         font-weight: 700;
         text-transform: capitalize;
+        color: var(--color-title);
     }
 
     /* APLICANDO FLEXBOX A LA CLASE "MAIN__FLEX-CARDS" */
@@ -473,6 +488,10 @@ a {
         margin-left: 10px;
     }
 
+    .footer {
+        height: 70px;
+    }
+
     /* LOGO */
     .navbar img {
         width: 180px;
@@ -517,7 +536,7 @@ a {
         margin-top: 0;
         display: flex;
         justify-content: space-around;
-        margin-top: 35px;
+        margin-top: 20px;
     }
 
     .footer__nav .terms,
@@ -585,21 +604,25 @@ a {
 
 .grilla-general .main__bio .main__contents h1 {
     font-size: 1.5rem;
+    color: var(--color-title);
 }
 
 .grilla-general .main__bio .main__contents .title {
     font-size: 1.25rem;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: var(--color-title);
 }
 
 .grilla-general .main__bio .main__contents p {
     text-align: justify;
     line-height: 1.3;
+    color: var(--color-p);
 }
 
 .grilla-general .main__bio .main__contents p a {
     color: #04ff42;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -625,6 +648,7 @@ a {
     text-align: center;
     line-height: 1.6;
     letter-spacing: 1px;
+    color: var(--color-title);
 }
 
 .grilla-general .main__bio .main__flex-container .main__flex-item iframe {
@@ -636,6 +660,7 @@ a {
 .grilla-general .main__bio .main__flex-container .main__flex-item p {
     font-size: 0.75rem;
     text-align: center;
+    color: var(--color-p);
 }
 
 .grilla-general .main__bio .main__flex-container .main__flex-item .modified-text {
@@ -647,6 +672,7 @@ a {
 }
 
 .grilla-general .main__bio .main__flex-container .modified-text a {
+    font-size: 0.875rem;
     color: #04ff42;
     font-weight: 500;
 }
@@ -665,6 +691,7 @@ a {
     margin-top: 20px;
     font-size: 1.5rem;
     text-align: center;
+    color: var(--color-title);
 }
 
 .grilla-general .main__bio .main__cards .main__figure {
@@ -679,17 +706,20 @@ a {
 
 .grilla-general .main__bio .main__cards .main__text-container h4 {
     font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-title);
 }
 
 .grilla-general .main__bio .main__cards .main__text-container p {
     font-size: 0.875rem;
-    text-align: justify;
+    text-align: center;
     line-height: 1.5;
     margin-bottom: 50px;
+    color: var(--color-p);
 }
 
 .grilla-general .main__bio .main__cards .main__text-container .button {
-    background-color: #04ff42;
+    background-color: var(--color-button);
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -700,10 +730,11 @@ a {
 .grilla-general .main__bio .main__cards .main__text-container .button a {
     display: inline-block;
     width: 100%;
-    line-height: 50px;
+    line-height: 30px;
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: 500;
+    color: #ffffff;
 }
 
 @media (min-width: 576px) {
@@ -724,6 +755,7 @@ a {
         text-align: center;
         margin-top: 5px;
         letter-spacing: 1px;
+        color: var(--color-p)
     }
 
     /* CONTENIDO DE LA BIOGRAFIA */
@@ -764,12 +796,16 @@ a {
         height: 315px;
     }
 
+    .grilla-general .main__bio .main__flex-container .main__flex-item p {
+        font-size: 1rem;
+    }
+
     .grilla-general .main__bio .main__flex-container .main__flex-item .modified-text {
         font-size: 1.125rem;
     }
 
-    .grilla-general .main__bio .main__flex-container .main__flex-item p {
-        font-size: 1rem;
+    .grilla-general .main__bio .main__flex-container .modified-text a {
+        font-size: 1.125rem;
     }
 
     /* SECCION DISCOS - APLICO CSS GRID */
@@ -916,15 +952,16 @@ a {
 /* CONTENIDO DE LA DISCOGRAFIA */
 .grilla-general .main__disco {
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .grilla-general .main__disco .main__title-h1 {
     font-size: 1.25rem;
+    color: var(--color-title);
 }
 
 .grilla-general .main__disco .main__grid {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: grid;
     justify-items: center;
 }
@@ -933,6 +970,7 @@ a {
     font-size: 1rem;
     text-align: center;
     margin-top: 30px;
+    color: var(--color-title);
 }
 
 .grilla-general .main__disco .main__grid figure img {
@@ -949,12 +987,13 @@ a {
 
 .grilla-general .main__disco .main__grid .enlace a {
     display: inline-block;
-    background-color: #04ff42;
+    background-color: var(--color-button);
     width: 200px;
     height: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 20px;
+    color: #ffffff;
 }
 
 .grilla-general .main__disco .main__grid .songs-list {
@@ -1023,6 +1062,7 @@ a {
         font-size: 1.25rem;
         list-style: decimal;
         list-style-position: inside;
+        color: var(--color-p);
     }
 
     .grilla-general .main__disco .main__grid .grid-position-2 {
@@ -1048,11 +1088,12 @@ a {
 /* CONTENIDO DE LA GALERIA */
 .main__galeria {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .main__galeria h1 {
     font-size: 1.75rem;
+    color: var(--color-title);
 }
 
 .carousel h2 {
@@ -1061,6 +1102,7 @@ a {
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
+    color: var(--color-title);
 }
 
 .carousel-inner {
@@ -1073,6 +1115,10 @@ a {
 }
 
 .carousel-control-prev, .carousel-control-next {
+    z-index: 0;
+}
+
+.carousel .slide {
     z-index: 0;
 }
 
@@ -1094,7 +1140,7 @@ a {
     display: none;
 }
 
-.grilla-img-cont .main__contacto .main__form-register {
+.main__contacto .main__form-register {
     width: 90%;
     height: 100%;
     margin: auto;
@@ -1112,6 +1158,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 50px;
+    color: var(--color-title);
 }
 
 .main__form-register .controls {
@@ -1130,6 +1177,7 @@ a {
     text-align: center;
     font-size: 1rem;
     line-height: 30px;
+    color: var(--color-p);
 }
 
 .main__form-register label a {
@@ -1146,7 +1194,7 @@ a {
 
 .main__form-register .botons {
     width: 100%;
-    background: #41e600b4;
+    background: var(--color-button);
     border: none;
     padding: 12px;
     color: #ffffff;
@@ -1167,21 +1215,21 @@ a {
         background-image: url(../images/twRegistro.jpg);
     }
 
-    .grilla-img-cont .main__contacto .main__form-register {
+    .main__contacto .main__form-register {
         width: 382.5px;
     }
 }
 
 @media (min-width: 768px) {
     
-    .grilla-img-cont .main__contacto .main__form-register {
+    .main__contacto .main__form-register {
         width: 500px;
     }
 }
 
 @media (min-width: 992px) {
 
-    .grilla-img-cont .main__contacto .main__form-register {
+    .main__contacto .main__form-register {
         width: 650px;
         height: 700px;
         text-align: center;
