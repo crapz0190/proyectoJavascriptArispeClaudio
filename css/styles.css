@@ -108,7 +108,7 @@ body {
 .contents__front {
     height: 350px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
