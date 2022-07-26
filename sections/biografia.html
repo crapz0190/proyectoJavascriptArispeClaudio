@@ -7,40 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biografía | The Warning</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
     <!-- APLICANDO GRID PARA EL LAYOUT -->
     <div class="grilla-general">
-        <!-- LOGO  -->
-        <header class="header">
-            <figure class="header__logo">
-                <a href="../index.html"><img src="../images/the-warning-logo-desktop.png" alt="logo" class="header__img-desktop"></a>
-
-                <a href="index.html"><img src="../images/the-warning-logo-mobile.png" alt="logo"
-                    class="header__img-mobile"></a>
-            </figure>
-            <!-- BARRA DE NAVEGACIÓN-->
-            <nav class="navbar">
-                 <!-- MENU DE NAVEGACION "HAMBURGUESA" -->
-                 <label for="menu" class="navbar__menu">
-                    <i class="bx bx-menu"></i>
-                </label>
-                <!-- <input type="checkbox" id="menu" class="navbar__input"> -->
-
-                <!-- BARRA DE NAVEGACIÓN CON FLEXBOX -->
-                <ul class="navbar__links">
-                    <li><a class="navbar__link" href="../index.html">inicio</a></li>
-                    <li><a class="navbar__link" href="../sections/biografia.html">biografía</a></li>
-                    <li><a class="navbar__link" href="../sections/discografia.html">discografía</a></li>
-                    <li><a class="navbar__link" href="../sections/imagenes.html">galería</a></li>
-                    <li><a class="navbar__link" href="../sections/contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        
+        <!-- BARRA DE NAVEGACIÓN BOOTSTRAP-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/the-warning-logo-desktop.png" alt="logo"
+                    class="header__img-desktop"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/biografia.html">biografía</a>
+                        </li>                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/discografia.html">discografía</a>
+                        </li>                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/imagenes.html">galería</a>
+                        </li>                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/contacto.html">contacto</a>
+                        </li>                   
+                    </ul>                
+                </div>
+            </div>
+        </nav>
 
         <!-- PORTADA DE LA BIOGRAFIA -->
         <section class="banner">
@@ -52,7 +58,7 @@
         </section>
         
         <!-- CONTENIDO DE LA BIOGRAFIA -->
-        <main class="main__bio container">
+        <main class="main main__bio container">
             <!-- TEXTO DE LA BIOGRAFIA -->
             <section class="main__contents">
                 <h1>The Warning: tres hermanas mexicanas que reinventan el rock clásico</h1>
@@ -151,7 +157,6 @@
                 <div class="main__cards-grid">
                     <figure class="main__figure">
                         <img src="../images/XXIcenturyblood.jpg" alt="">
-                        <!-- <figcaption>XXI Century Blood</figcaption> -->
                     </figure>
                     <div class="main__text-container">
                         <h4>XXI Century Blood</h4>
@@ -167,12 +172,11 @@
                             Mother Of
                             All Rock Festival.
                         </p>
-                        <div class="button"><a href="../sections/discografia.html">                       Ver disco</a></div>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
                     </div>
 
                     <figure class="main__figure grid-position-2">
                         <img src="../images/queenofthemurderscene.webp" alt="">
-                        <!-- <figcaption>Queen of the Murder Scene</figcaption> -->
                     </figure>
                     <div class="main__text-container">
                         <h4>Queen of the Murder Scene</h4>
@@ -185,17 +189,11 @@
                             como
                             Rock Al Parque de Bogotá, o el Whisky A Gogo en Hollywood con dos noches atascadas.
                         </p>
-                        <div class="button"><a href="../sections/discografia.html">
-                            <span class="span1"></span>
-                            <span class="span2"></span>
-                            <span class="span3"></span>
-                            <span class="span4"></span>
-                            Ver disco</a></div>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
                     </div>
 
                     <figure class="main__figure">
                         <img src="../images/mayday.jpg" alt="">
-                        <!-- <figcaption>Mayday</figcaption> -->
                     </figure>
                     <div class="main__text-container">
                         <h4>Mayday</h4>
@@ -206,17 +204,11 @@
                             generaciones sobre el amor, la tecnología, los saltos generacionales, la ansiedad, y la
                             intensa presión a la que son sometidos para suprimir las emociones".
                         </p>
-                        <div class="button"><a href="../sections/discografia.html">
-                            <span class="span1"></span>
-                            <span class="span2"></span>
-                            <span class="span3"></span>
-                            <span class="span4"></span>
-                            Ver disco</a></div>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
                     </div>
 
                     <figure class="main__figure grid-position-4">
                         <img src="../images/error.jpg" alt="">
-                        <!-- <figcaption>Error</figcaption> -->
                     </figure>
                     <div class="main__text-container">
                         <h4>Error</h4>
@@ -230,12 +222,7 @@
                             humanidad
                             y todo lo demás”, comparte The Warning.
                         </p>
-                        <div class="button"><a href="../sections/discografia.html">
-                            <span class="span1"></span>
-                            <span class="span2"></span>
-                            <span class="span3"></span>
-                            <span class="span4"></span>
-                            Ver disco</a></div>
+                        <div class="button"><a href="../sections/discografia.html">Ver disco</a></div>
                     </div>
                 </div>
             </section>
@@ -244,13 +231,15 @@
         <footer class="footer">
             <nav class="footer__nav">
                 <ul>
-                    <li>©2022 Todos los derechos reservados</li>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Términos de uso</a></li>
+                    <li class="terms">©2022 Todos los derechos reservados</li>
+                    <li class="terms"><a href="#">Política de privacidad</a></li>
+                    <li class="terms"><a href="#">Términos de uso</a></li>
                 </ul>
             </nav>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
