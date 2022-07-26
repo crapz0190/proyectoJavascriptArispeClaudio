@@ -43,7 +43,6 @@ body {
     background: linear-gradient(to right, hsla(275, 90%, 20%, 0.466), hsla(350, 71%, 40%, 0.315)), url(../images/twPortadaMob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .main {
@@ -109,7 +108,7 @@ body {
 .contents__front {
     height: 350px;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -150,7 +149,7 @@ body {
 
 .contents__icons {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .contents_icons-lists {
