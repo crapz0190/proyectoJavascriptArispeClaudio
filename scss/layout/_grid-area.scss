@@ -1,0 +1,51 @@
+// GRID AREA
+.navbar {
+    grid-area: navbar;
+    background-color: #030303;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner {
+    grid-area: banner;
+    display: none;
+}
+
+.contents {
+    grid-area: contents;
+    height: 95vh;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: linear-gradient(to right, hsla(275, 90%, 20%, 0.466), hsla(350, 71%, 40%, 0.315)), url(../images/twPortadaMob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #030303c4;
+    height: 95px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+// ACOMODANDO POR AREAS
+.grilla-general {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "banner"
+        "contents"
+        "main"
+        "footer";
+}
