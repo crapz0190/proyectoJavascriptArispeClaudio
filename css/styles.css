@@ -1,2 +1,98 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  color: #ffffff; }
+
+.main__about {
+  display: none; }
+
 body {
-  background-color: aqua; }
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-image: url(../images/backgroundImageTW4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh; }
+
+/* GRID AREA */
+.header {
+  grid-area: header; }
+
+.banner {
+  grid-area: banner;
+  display: none; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer;
+  background-color: #030303c4;
+  height: 95px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+/* ACOMODANDO POR AREAS */
+.grilla-general {
+  display: grid;
+  grid-template-areas: "navbar" "banner" "contents" "main" "footer"; }
+
+/* NAVBAR */
+.navbar {
+  background-color: #030303;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.container-fluid {
+  padding: 0; }
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px; }
+
+.img-desktop {
+  width: 110px;
+  height: 40px; }
+
+.navbar-toggler {
+  margin-right: 15px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f3f3f3; }
+
+.container-fluid .navbar-collapse .navbar-nav {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 30px; }
+
+.container-fluid .collapse .nav-link {
+  font-size: 1.25rem;
+  transition: all 1s;
+  color: #ffffff; }
+
+.container-fluid .collapse .nav-link:hover {
+  color: #f20707;
+  transition: 0.2s; }
+
+.contents__front {
+  background: linear-gradient(to right, rgba(37, 11, 55, 0.582), rgba(182, 12, 40, 0.384)), url(../images/twPortadaMob.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #ffc401;
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  align-items: flex-end; }
