@@ -28,8 +28,60 @@ body {
   grid-area: banner;
   display: none; }
 
+.contents {
+  grid-area: contents;
+  background: linear-gradient(to right, rgba(37, 11, 55, 0.582), rgba(182, 12, 40, 0.384)), url(../images/twPortadaMob.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: end;
+  text-align: center; }
+  .contents__title {
+    grid-column: 3/7;
+    grid-row: 2/3;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+  .contents__link {
+    grid-column: 4/6;
+    grid-row: 3/4;
+    width: 150px;
+    height: 50px; }
+    .contents__link a {
+      display: inline-block; }
+  .contents__icons {
+    grid-column: 2/8;
+    grid-row: 4/5; }
+    .contents__icons-lists {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .contents__icons-lists li {
+        width: 40px;
+        height: 40px; }
+        .contents__icons-lists li a {
+          display: block;
+          color: #ffffff;
+          line-height: 40px;
+          font-size: 1.125rem;
+          border-radius: 30px; }
+        .contents__icons-lists li .youtube {
+          background-color: #ff1111f3; }
+        .contents__icons-lists li .spotify {
+          background-color: #21c521; }
+        .contents__icons-lists li .twitter {
+          background-color: #55acee; }
+        .contents__icons-lists li .instagram {
+          background-color: #ce2342; }
+        .contents__icons-lists li .facebook {
+          background-color: #166fe5; }
+
 .main {
-  grid-area: main; }
+  grid-area: main;
+  height: 100vh; }
 
 .footer {
   grid-area: footer;
@@ -43,6 +95,15 @@ body {
 .grilla-general {
   display: grid;
   grid-template-areas: "navbar" "banner" "contents" "main" "footer"; }
+
+.navbar {
+  list-style: none; }
+  .navbar li {
+    font-size: 0; }
+    .navbar li .maxi__cn {
+      text-decoration: none; }
+      .navbar li .maxi__cn:hover {
+        color: #166fe5; }
 
 /* NAVBAR */
 .navbar {
@@ -84,15 +145,3 @@ body {
 .container-fluid .collapse .nav-link:hover {
   color: #f20707;
   transition: 0.2s; }
-
-.contents__front {
-  background: linear-gradient(to right, rgba(37, 11, 55, 0.582), rgba(182, 12, 40, 0.384)), url(../images/twPortadaMob.jpg);
-  background-size: cover;
-  height: 100vh;
-  color: #ffc401;
-  grid-area: section;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  justify-items: center;
-  align-items: flex-end; }
