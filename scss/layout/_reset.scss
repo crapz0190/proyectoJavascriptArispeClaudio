@@ -1,14 +1,31 @@
-*, *:before, *:after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    // text-decoration: none;
-    list-style-type: none;
-    color: #ffffff;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
-  .main__about {
-    display: none;
+*, *:before, *:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+// Variables
+$youtube: #ff1111f3;
+$spotify: #21c521;
+$twitter: #55acee;
+$instagram: #ce2342;
+$facebook: #166fe5;
+$color-title: #e5ff00;
+$color-p: #f0ce70;
+$color-button: #41e600b4;
+
+/* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 100px;
 }

@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/styles.scss css/styles.css",
-    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/crapz0190/proyectoCoder/issues"
   },
-  "homepage": "https://github.com/crapz0190/proyectoCoder#readme",
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
-  }
+  "homepage": "https://github.com/crapz0190/proyectoCoder#readme"
 }
