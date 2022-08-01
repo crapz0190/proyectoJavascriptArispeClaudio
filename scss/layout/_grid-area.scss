@@ -109,16 +109,3 @@ $facebook: #166fe5;
     "main"
     "footer";
 }
-
-.navbar {
-    list-style: none;
-    li {
-        font-size: 0;
-        .maxi__cn {
-            text-decoration: none;
-            &:hover {
-                color: #166fe5;
-            }
-        }
-    }
-}
