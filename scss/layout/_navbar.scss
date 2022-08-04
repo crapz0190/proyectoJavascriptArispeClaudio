@@ -4,11 +4,17 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 60px;
     z-index: 1;
+}
+
+.navbar-dark {
+    padding: 0;
 }
 
 .container-fluid {
     padding: 0;
+    height: inherit;
 }
 
 .navbar-brand {
@@ -18,8 +24,7 @@
 }
 
 .img-desktop {
-    width: 110px;
-    height: 40px;
+    height: 60px;
 }
 
 .navbar-toggler {
@@ -33,7 +38,6 @@
 .container-fluid .navbar-collapse .navbar-nav {
     text-transform: capitalize;
     text-align: center;
-    margin-top: 30px;
 }
 
 .container-fluid .collapse .nav-link {
