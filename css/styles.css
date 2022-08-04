@@ -19,6 +19,14 @@
   margin-bottom: 100px;
 }
 
+.contents {
+  display: none;
+}
+
+.main {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
