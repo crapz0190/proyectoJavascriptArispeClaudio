@@ -1,0 +1,12 @@
+@mixin medidas ($width, $height, $padding, $margin) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin flex ($display, $flex-direction, $justify-content) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}

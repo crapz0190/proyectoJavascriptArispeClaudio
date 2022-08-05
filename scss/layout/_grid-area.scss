@@ -13,176 +13,167 @@
 
 .contents {
     grid-area: contents;
-    // background: linear-gradient(to right, hsla(275, 67%, 13%, 0.582), hsla(350, 88%, 38%, 0.384)), url(../images/twPortadaMob.jpg);
-    // background-size: cover;
-    // height: 100vh;
-    // display: grid;
-    // grid-template-columns: repeat(8, 1fr);
-    // grid-template-rows: repeat(5, 1fr);
-    // align-items: end;
-    // text-align: center;
-//     &__title {
-//         grid-column: 3/7;
-//         grid-row: 2/3;
-//         font-family: 'Nosifer', sans-serif;
-//         font-size: 2.25rem;
-//         text-transform: uppercase;
-//         color: $color-title;
-//     }
-//     &__link {
-//         grid-column: 4/6;
-//         grid-row: 3/4;
-//         width: 150px;
-//         height: 50px;
-//         background-color: rgba(250, 235, 215, 0);
-//         a {
-//             display: inline-block;
-//             text-decoration: none;
-//             font-size: 1.25rem;
-//             width: inherit;
-//             height: inherit;
-//             line-height: 50px;
-//             color: #ffffff;
-//             background-color: $color-button;
-//         }
-//     }
-//     &__icons {
-//         grid-column: 2/8;
-//         grid-row: 4/5;
-//         &-lists {
-//             margin: 0;
-//             padding: 0;
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-evenly;
-//             li {
-//                 width: 40px;
-//                 height: 40px;
-//                 a {
-//                     display: block;
-//                     color: #ffffff;
-//                     line-height: 40px;
-//                     font-size: 1.125rem;
-//                     border-radius: 30px;
-//                 }
-//                 .youtube {
-//                     background-color: $youtube;
-//                 }
-//                 .spotify {
-//                     background-color: $spotify;
-//                 }
-//                 .twitter {
-//                     background-color: $twitter;
-//                 }
-//                 .instagram {
-//                     background-color: $instagram;
-//                 }
-//                 .facebook {
-//                     background-color: $facebook
-//                 }
-//             }
-//         }
-//     }
+    background: linear-gradient(to right, hsla(275, 67%, 13%, 0.582), hsla(350, 88%, 38%, 0.384)), url(../images/twPortadaMob.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: end;
+    text-align: center;
+    &__title {
+        grid-row: 2/3;
+        font-family: 'Nosifer', sans-serif;
+        font-size: 2.25rem;
+        color: $color-title;
+    }
+    &__link {
+        grid-row: 3/4;
+        @include medidas (150px, 50px, none, 0 auto);
+        background-color: rgba(250, 235, 215, 0);
+        a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.25rem;
+            width: inherit;
+            height: inherit;
+            line-height: 50px;
+            border-radius: 20px;
+            color: #ffffff;
+            background-color: $color-button;
+        }
+    }
+    &__icons {
+        grid-row: 4/5;
+        &-lists {
+            @include medidas (none, none, 0, 0);
+            @include flex (flex, row, center);
+            li {
+                @include medidas (40px, 40px, none, 5px);
+                a {
+                    display: block;
+                    color: #ffffff;
+                    line-height: 40px;
+                    border-radius: 30px;
+                }
+                .youtube {
+                    background-color: $youtube;
+                }
+                .spotify {
+                    background-color: $spotify;
+                }
+                .twitter {
+                    background-color: $twitter;
+                }
+                .instagram {
+                    background-color: $instagram;
+                }
+                .facebook {
+                    background-color: $facebook
+                }
+            }
+        }
+    }
 }
 
-// .main {
-//     grid-area: main;
-//     /* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
-//     &__about {
-//         display: none;
-//     }
-//     &__news {
-//         margin-top: 70px;
-//         h2,p {
-//             color: $color-title;
-//             text-align: center;
-//         }
-//     }
-//     &__iframe {
-//         width: 100%;
-//         margin-top: 30px;
-//         margin-bottom: 50px;
-//     }
-//     &__shows {
-//         h2 {
-//             color: $color-title;
-//             letter-spacing: 1.5px;
-//             text-transform: capitalize;
-//             text-align: center;
-//             margin-top: 30px;
-//         }
-//         .main__tour {
-//             font-family: 'Montserrat', sans-serif;
-//             width: 90vw;
-//             overflow-y: auto;
-//             display: flex;
-//             margin-top: 70px;
-//             margin-bottom: 50px;
-//             &-list {
-//                 background-color: #f3f3f3;
-//                 width: inherit;
-//                 height: 100%;
-//                 margin-left: 10px;
-//                 margin-right: 10px;
-//                 border-radius: 10px;
-//                 img {
-//                     width: 270px;
-//                     height: 250px;
-//                     object-fit: cover;
-//                     border-radius: 10px 10px 0 0;
-//                 }
-//                 .post-date {
-//                     background: transparent url(../images/bg_pazzle.png);
-//                     background-size: cover;
-//                     width: 1.5em;
-//                     height: 1.5em;
-//                     padding: 32px;
-//                     font-size: 1rem;
-//                     text-transform: uppercase;
-//                     text-align: center;
-//                     font-weight: 700;
-//                     color: #ffffff;
-//                     display: flex;
-//                     flex-direction: column;
-//                     justify-content: center;
-//                     align-items: center;
-//                     position: relative;
-//                     float: right;
-//                     bottom: 33px;
-//                     right: 10px;
-//                 }
-//                 .item-text {
-//                     margin-top: 20px;
-//                     padding: 20px;
-//                     h3 {
-//                         color: #000000;
-//                         font-size: 1.5rem;
-//                         text-transform: capitalize;
-//                     }
-//                     span {
-//                         color: #000000;
-//                         font-size: 0.875rem;
-//                         text-transform: capitalize;
-//                     }
-//                     .button {
-//                         margin-top: 10px;
-//                         padding: 20px;
-//                         text-align: center;
-//                         text-transform: uppercase;
-//                         a {
-//                             color: #840096;
-//                             font-weight: 500;
-//                             text-decoration: none;
-//                         }
-//                         a:hover {
-//                             color: #ff0000;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+.main {
+    grid-area: main;
+    /* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
+    &__about {
+        display: none;
+    }
+    &__news {
+        margin-top: 70px;
+        h2, p {
+            color: $color-title;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+    &__iframe {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    &__shows {
+        h2 {
+            color: $color-title;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .main__tour {
+            font-family: 'Montserrat', sans-serif;
+            width: 90vw;
+            overflow-y: auto;
+            display: flex;
+            margin-top: 70px;
+            margin-bottom: 50px;
+            &-list {
+                background-color: #f3f3f3;
+                width: inherit;
+                height: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 10px;
+                img {
+                    width: 270px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px 10px 0 0;
+                }
+                .post-date {
+                    background: transparent url(../images/bg_pazzle.png);
+                    background-size: cover;
+                    width: 1.5em;
+                    height: 1.5em;
+                    padding: 32px;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 700;
+                    color: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    float: right;
+                    bottom: 33px;
+                    right: 10px;
+                }
+                .item-text {
+                    margin-top: 20px;
+                    padding: 20px;
+                    h3 {
+                        color: #000000;
+                        font-size: 1.5rem;
+                        text-transform: capitalize;
+                    }
+                    span {
+                        color: #000000;
+                        font-size: 0.875rem;
+                        text-transform: capitalize;
+                    }
+                    .button {
+                        margin-top: 10px;
+                        padding: 20px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        a {
+                            color: #840096;
+                            font-weight: 500;
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .footer {
     grid-area: footer;

@@ -104,6 +104,36 @@
 }
 
 @media (min-width: 768px) {
+    .contents {
+        align-items: start;
+        &__title {
+            grid-row: 3/4;
+        }
+        &__link {
+            grid-row: 4/5;
+        }
+        /* ICONOS DE REDES SOCIALES */
+        &__icons {
+            position: fixed;
+            right: 0;
+            bottom: 100px; /* REVISAR */
+            &-lists {
+                display: block;
+                margin-bottom: 150px;
+                li {
+                    margin-bottom: 10px;
+                }
+                &:hover a {
+                    filter: blur(2px);
+                }
+                a:hover {
+                    transform: translateY(-3px) scale(1.05);
+                    filter: none;
+                }
+            }
+        }
+    }
+
     .container-fluid .collapse {
         position: absolute;
         right: 0;
@@ -134,34 +164,17 @@
     .contents {
         background-image: url(../images/twPortada1.jpg);
         &__title {
-            // grid-column: 4/6;
-            grid-row: 3/4;
-            font-size: 2.5rem;
+            grid-row: 2/3;
+            font-size: 2.75rem;
         }
         &__link {
-            grid-column: 4/6;
-            grid-row: 4/5;
-            margin: 0 auto;
+            grid-row: 5/6;
         }
-         /* ICONOS DE REDES SOCIALES */
+        /* ICONOS DE REDES SOCIALES */
         &__icons {
             position: fixed;
             right: 0;
-            bottom: 10px;
-            &-lists {
-                display: block;
-                margin-bottom: 150px;
-                li {
-                    margin-bottom: 15px;
-                }
-                &:hover a {
-                    filter: blur(2px);
-                }
-                a:hover {
-                    transform: translateY(-3px) scale(1.05);
-                    filter: none;
-                }
-            }
+            bottom: 20px; /* REVISAR */
         }
     }
       /* SECCION "MAIN__NEWS" */

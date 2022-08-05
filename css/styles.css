@@ -19,14 +19,6 @@
   margin-bottom: 100px;
 }
 
-.contents {
-  display: none;
-}
-
-.main {
-  display: none;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
@@ -103,6 +95,175 @@ body {
 
 .contents {
   grid-area: contents;
+  background: linear-gradient(to right, hsla(275deg, 67%, 13%, 0.582), hsla(350deg, 88%, 38%, 0.384)), url(../images/twPortadaMob.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: end;
+  text-align: center;
+}
+.contents__title {
+  grid-row: 2/3;
+  font-family: "Nosifer", sans-serif;
+  font-size: 2.25rem;
+  color: #e5ff00;
+}
+.contents__link {
+  grid-row: 3/4;
+  width: 150px;
+  height: 50px;
+  padding: none;
+  margin: 0 auto;
+  background-color: rgba(250, 235, 215, 0);
+}
+.contents__link a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  width: inherit;
+  height: inherit;
+  line-height: 50px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: rgba(65, 230, 0, 0.7058823529);
+}
+.contents__icons {
+  grid-row: 4/5;
+}
+.contents__icons-lists {
+  width: none;
+  height: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contents__icons-lists li {
+  width: 40px;
+  height: 40px;
+  padding: none;
+  margin: 5px;
+}
+.contents__icons-lists li a {
+  display: block;
+  color: #ffffff;
+  line-height: 40px;
+  border-radius: 30px;
+}
+.contents__icons-lists li .youtube {
+  background-color: rgba(255, 17, 17, 0.9529411765);
+}
+.contents__icons-lists li .spotify {
+  background-color: #21c521;
+}
+.contents__icons-lists li .twitter {
+  background-color: #55acee;
+}
+.contents__icons-lists li .instagram {
+  background-color: #ce2342;
+}
+.contents__icons-lists li .facebook {
+  background-color: #166fe5;
+}
+
+.main {
+  grid-area: main;
+  /* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
+}
+.main__about {
+  display: none;
+}
+.main__news {
+  margin-top: 70px;
+}
+.main__news h2, .main__news p {
+  color: #e5ff00;
+  text-align: center;
+  text-transform: capitalize;
+}
+.main__iframe {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.main__shows h2 {
+  color: #e5ff00;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 30px;
+}
+.main__shows .main__tour {
+  font-family: "Montserrat", sans-serif;
+  width: 90vw;
+  overflow-y: auto;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.main__shows .main__tour-list {
+  background-color: #f3f3f3;
+  width: inherit;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.main__shows .main__tour-list img {
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.main__shows .main__tour-list .post-date {
+  background: transparent url(../images/bg_pazzle.png);
+  background-size: cover;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: right;
+  bottom: 33px;
+  right: 10px;
+}
+.main__shows .main__tour-list .item-text {
+  margin-top: 20px;
+  padding: 20px;
+}
+.main__shows .main__tour-list .item-text h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.main__shows .main__tour-list .item-text span {
+  color: #000000;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+.main__shows .main__tour-list .item-text .button {
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main__shows .main__tour-list .item-text .button a {
+  color: #840096;
+  font-weight: 500;
+  text-decoration: none;
+}
+.main__shows .main__tour-list .item-text .button a:hover {
+  color: #ff0000;
 }
 
 .footer {
@@ -236,6 +397,35 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .contents {
+    align-items: start;
+    /* ICONOS DE REDES SOCIALES */
+  }
+  .contents__title {
+    grid-row: 3/4;
+  }
+  .contents__link {
+    grid-row: 4/5;
+  }
+  .contents__icons {
+    position: fixed;
+    right: 0;
+    bottom: 100px; /* REVISAR */
+  }
+  .contents__icons-lists {
+    display: block;
+    margin-bottom: 150px;
+  }
+  .contents__icons-lists li {
+    margin-bottom: 10px;
+  }
+  .contents__icons-lists:hover a {
+    filter: blur(2px);
+  }
+  .contents__icons-lists a:hover {
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+  }
   .container-fluid .collapse {
     position: absolute;
     right: 0;
@@ -266,32 +456,16 @@ body {
     /* ICONOS DE REDES SOCIALES */
   }
   .contents__title {
-    grid-row: 3/4;
-    font-size: 2.5rem;
+    grid-row: 2/3;
+    font-size: 2.75rem;
   }
   .contents__link {
-    grid-column: 4/6;
-    grid-row: 4/5;
-    margin: 0 auto;
+    grid-row: 5/6;
   }
   .contents__icons {
     position: fixed;
     right: 0;
-    bottom: 10px;
-  }
-  .contents__icons-lists {
-    display: block;
-    margin-bottom: 150px;
-  }
-  .contents__icons-lists li {
-    margin-bottom: 15px;
-  }
-  .contents__icons-lists:hover a {
-    filter: blur(2px);
-  }
-  .contents__icons-lists a:hover {
-    transform: translateY(-3px) scale(1.05);
-    filter: none;
+    bottom: 20px; /* REVISAR */
   }
   /* SECCION "MAIN__NEWS" */
   .main__news {
