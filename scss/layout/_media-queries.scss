@@ -98,7 +98,8 @@
             }
         }
     }
-    .main__shows .main__tour {
+    /* SECCION DE PROXIMAS PRESENTACIONES */
+    .main__shows {
         width: 100%;
     }
 }
@@ -145,6 +146,13 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    /* SECCION DE PROXIMAS PRESENTACIONES */
+    .main__shows {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .footer {
         height: 70px;
         &__nav ul {
