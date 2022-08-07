@@ -18,6 +18,7 @@
     grid-template-rows: repeat(5, 1fr);
     align-items: end;
     text-align: center;
+    position: relative;
 
     &__title {
         grid-row: 2/3;
@@ -83,11 +84,17 @@
             }
         }
     }
+    &__waves {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 .main {
     grid-area: main;
-
+    margin-bottom: 150px;
+    
     /* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
     &__about {
         display: none;
@@ -96,20 +103,23 @@
     &__news {
         margin-top: 70px;
 
-        h2, p {
+        h2,
+        p {
             color: $color-title;
             text-align: center;
             text-transform: capitalize;
         }
+
         iframe {
             width: 100%;
             margin-top: 30px;
             margin-bottom: 50px;
         }
     }
+
     &__shows {
         width: 90vw;
-        height: 100vh;
+        
         h2 {
             color: $color-title;
             letter-spacing: 1.5px;
@@ -117,11 +127,62 @@
             text-align: center;
             margin-top: 30px;
         }
+
         .row {
             .item {
                 .card {
                     img {
                         height: 280px;
+                        object-fit: cover;
+                    }
+                    .post-date {
+                        background: transparent url(../images/bg_pazzle.png);
+                        background-size: cover;
+                        @include medidas (1.5em, 1.5em, 32px, none);
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-weight: 700;
+                        color: #ffffff;
+                        @include flex (flex, column, center, center);
+                        position: absolute;
+                        right: 10px;
+                        bottom: 163px;
+                    }
+                    .card-body {
+                        margin-top: 30px;
+                        height: 165px;
+                        @include flex (flex, column, flex-end, flex-start);
+                        h3 {
+                            color: #000000;
+                            margin: 0;
+                            font-size: 1rem;
+                            text-transform: capitalize;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            @extend h3;
+                            font-size: 0.875rem;
+                        }
+                        .button {
+                            @include medidas (100%, 50px, 0, 0 auto);
+                            a {
+                                display: inline-block;
+                                width: inherit;
+                                height: inherit;
+                                line-height: 50px;
+                                font-size: 0.875rem;
+                                text-align: center;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: $color-text-btn;
+                                font-weight: 700;
+                            }
+                            a:hover {
+                                color: #000000;
+                                transition: all 0.5s;
+                            }
+                        }
                     }
                 }
             }

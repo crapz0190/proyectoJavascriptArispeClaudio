@@ -67,6 +67,10 @@ body {
   border: 2px solid #f3f3f3;
 }
 
+.container-fluid .bg {
+  background-color: #030303;
+}
+
 .container-fluid .navbar-collapse .navbar-nav {
   text-transform: capitalize;
   text-align: center;
@@ -102,6 +106,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   align-items: end;
   text-align: center;
+  position: relative;
 }
 .contents__title {
   grid-row: 2/3;
@@ -168,9 +173,15 @@ body {
 .contents__icons-lists li .facebook {
   background-color: #166fe5;
 }
+.contents__waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 .main {
   grid-area: main;
+  margin-bottom: 150px;
   /* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
 }
 .main__about {
@@ -179,7 +190,8 @@ body {
 .main__news {
   margin-top: 70px;
 }
-.main__news h2, .main__news p {
+.main__news h2,
+.main__news p {
   color: #e5ff00;
   text-align: center;
   text-transform: capitalize;
@@ -191,7 +203,6 @@ body {
 }
 .main__shows {
   width: 90vw;
-  height: 100vh;
 }
 .main__shows h2 {
   color: #e5ff00;
@@ -202,6 +213,67 @@ body {
 }
 .main__shows .row .item .card img {
   height: 280px;
+  object-fit: cover;
+}
+.main__shows .row .item .card .post-date {
+  background: transparent url(../images/bg_pazzle.png);
+  background-size: cover;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 32px;
+  margin: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 163px;
+}
+.main__shows .row .item .card .card-body {
+  margin-top: 30px;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.main__shows .row .item .card .card-body h3, .main__shows .row .item .card .card-body p {
+  color: #000000;
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.main__shows .row .item .card .card-body p {
+  font-size: 0.875rem;
+}
+.main__shows .row .item .card .card-body .button {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0 auto;
+}
+.main__shows .row .item .card .card-body .button a {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  line-height: 50px;
+  font-size: 0.875rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ff0000;
+  font-weight: 700;
+}
+.main__shows .row .item .card .card-body .button a:hover {
+  color: #000000;
+  transition: all 0.5s;
 }
 
 .footer {
@@ -283,7 +355,7 @@ body {
     height: 100%;
     object-fit: cover;
   }
-  .main__cards .main__card .front h3 {
+  .main__cards .main__card .front h3, .main__cards .main__card .front .main__shows .row .item .card .card-body p, .main__shows .row .item .card .card-body .main__cards .main__card .front p {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -293,10 +365,11 @@ body {
     background: rgba(0, 0, 0, 0.7960784314);
     text-align: center;
     font-size: 1.5rem;
+    color: #f0ce70;
   }
   .main__cards .main__card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgba(197, 6, 6, 0.8823529412);
+    background: rgba(197, 6, 6, 0.6431372549);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -305,14 +378,16 @@ body {
     text-align: center;
     box-shadow: 0 5px 10px #000000;
   }
-  .main__cards .main__card .back h3 {
+  .main__cards .main__card .back h3, .main__cards .main__card .back .main__shows .row .item .card .card-body p, .main__shows .row .item .card .card-body .main__cards .main__card .back p {
     font-size: 1.5rem;
     margin-top: 20px;
     letter-spacing: 2px;
+    color: #00ca00;
   }
   .main__cards .main__card .back p {
     letter-spacing: 1px;
     text-align: justify;
+    color: #adff2f;
   }
   .main__cards .main__card .main__link {
     background: #360603;

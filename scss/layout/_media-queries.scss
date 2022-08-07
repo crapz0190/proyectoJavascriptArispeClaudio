@@ -1,4 +1,3 @@
-// INDEX
 @media (min-width: 576px) {
     .navbar img {
         width: 160px;
@@ -57,11 +56,12 @@
                     background: #000000cb;
                     text-align: center;
                     font-size: 1.5rem;
+                    color: $color-p;
                 }
             }
             .back {
                 transform: perspective(600px) rotateY(180deg);
-                background: #c50606e1;
+                background: #c50606a4;
                 padding: 15px;
                 color: #f3f3f3;
                 display: flex;
@@ -73,10 +73,12 @@
                     font-size: 1.5rem;
                     margin-top: 20px;
                     letter-spacing: 2px;
+                    color: #00ca00;
                 }
                 p {
                     letter-spacing: 1px;
                     text-align: justify;
+                    color: #adff2f;
                 }
             }
             .main__link {
