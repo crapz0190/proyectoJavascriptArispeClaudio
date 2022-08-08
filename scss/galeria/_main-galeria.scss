@@ -1,0 +1,34 @@
+.main__galeria {
+    margin-top: 80px;
+    h1 {
+        font-size: 1.5rem;
+        color: $color-title;
+    }
+    .carousel {
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+            color: $color-title;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        .slide {
+            z-index: 1;
+            .carousel-inner {
+                background-color: #000000;
+                .carousel-item {
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+            .carousel-control-prev {
+                z-index: 1;
+            }
+            .carousel-control-next {
+                z-index: 1;
+            }
+        }
+    }
+}

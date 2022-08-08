@@ -40,7 +40,9 @@
             height: inherit;
             line-height: 50px;
             border-radius: 20px;
-            color: #ffffff;
+            color: #000000;
+            text-transform: capitalize;
+            font-weight: 700;
             background-color: $color-button;
         }
     }
@@ -138,12 +140,12 @@
                     .post-date {
                         background: transparent url(../images/bg_pazzle.png);
                         background-size: cover;
+                        filter: invert(1);
                         @include medidas (1.5em, 1.5em, 32px, none);
                         font-size: 1rem;
                         text-transform: uppercase;
                         text-align: center;
                         font-weight: 700;
-                        color: #ffffff;
                         @include flex (flex, column, center, center);
                         position: absolute;
                         right: 10px;

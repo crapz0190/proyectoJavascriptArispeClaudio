@@ -13,13 +13,13 @@
 }
 
 .container-fluid {
-    padding: 0;
+    @extend .navbar-dark;
     height: inherit;
 }
 
 .navbar-brand {
+    @extend .navbar-dark;
     margin: 0;
-    padding: 0;
     margin-left: 20px;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .navbar-toggler {
+    @extend .navbar-dark;
     margin-right: 15px;
-    padding: 0;
     width: 40px;
     height: 40px;
     border: 2px solid #f3f3f3;
@@ -47,10 +47,10 @@
 .container-fluid .collapse .nav-link {
     font-size: 1.25rem;
     transition: all 1s;
-    color: #ffffff;
+    color: $color-title;
 }
 
 .container-fluid .collapse .nav-link:hover {
-    color: #f20707;
+    color: $color-button;
     transition: 0.2s;
 }
