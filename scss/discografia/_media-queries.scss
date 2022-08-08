@@ -13,6 +13,15 @@
                 h2 {
                     font-size: 1.25rem;
                 }
+                .enlace {
+                    a {
+                        &:hover {
+                            color: #ffffff;
+                            background-color: $color-hover;
+                            transition: .5s;
+                        }
+                    }
+                }
             }
         }    
     }   

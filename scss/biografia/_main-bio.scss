@@ -115,6 +115,11 @@
                         font-weight: 500;
                         color: #000000;
                         text-decoration: none;
+                        &:hover {
+                            color: #ffffff;
+                            background-color: $color-hover;
+                            transition: .5s;
+                        }
                     }
                 }
             }

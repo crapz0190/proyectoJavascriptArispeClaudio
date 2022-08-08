@@ -1,0 +1,35 @@
+@media (min-width: 576px) {
+    #contacto {
+        background-image: url(../images/twRegistro.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    .main__contacto {
+        .form {
+            .form__register {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .main__contacto {
+        .form {
+            .form__register {
+                @include medidas (650px, 700px, 90px, none);
+                text-align: center;
+                h2 {
+                    font-size: 1.75rem;
+                }
+                .controls {
+                    width: 400px;
+                }
+                .botons {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

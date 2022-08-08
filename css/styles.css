@@ -132,6 +132,11 @@ body {
   font-weight: 700;
   background-color: #41F876;
 }
+.contents__link a:hover {
+  color: #ffffff;
+  background-color: #ff04d5;
+  transition: 0.5s;
+}
 .contents__icons {
   grid-row: 4/5;
 }
@@ -396,10 +401,17 @@ body {
     border-radius: 5px;
   }
   .main__cards .main__card .main__link .cta {
+    display: inline-block;
+    width: inherit;
     color: #000000;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+  }
+  .main__cards .main__card .main__link .cta:hover {
+    color: #ffffff;
+    background-color: #ff04d5;
+    transition: 0.5s;
   }
   .main__cards .main__card:hover .front {
     transform: perspective(600px) rotateY(180deg);
@@ -609,6 +621,11 @@ body {
   color: #000000;
   text-decoration: none;
 }
+.main__bio .main__cards-grid .text-container .button a:hover {
+  color: #ffffff;
+  background-color: #ff04d5;
+  transition: 0.5s;
+}
 
 @media (min-width: 576px) {
   .banner {
@@ -711,6 +728,7 @@ body {
     grid-row: 4/5;
   }
 }
+/* CONTENIDO DE LA DISCOGRAFIA */
 .main__disco {
   margin-top: 80px;
 }
@@ -767,6 +785,11 @@ body {
   .main__disco .grid-container .grid-item h2 {
     font-size: 1.25rem;
   }
+  .main__disco .grid-container .grid-item .enlace a:hover {
+    color: #ffffff;
+    background-color: #ff04d5;
+    transition: 0.5s;
+  }
 }
 @media (min-width: 992px) {
   .main__disco .grid-container {
@@ -801,6 +824,7 @@ body {
     grid-row: 6/7;
   }
 }
+/* CONTENIDO DE LA GALERIA BOOTSTRAP */
 .main__galeria {
   margin-top: 80px;
 }
@@ -830,6 +854,108 @@ body {
 }
 .main__galeria .carousel .slide .carousel-control-next {
   z-index: 1;
+}
+
+#contacto {
+  background: linear-gradient(to right, hsla(275deg, 90%, 20%, 0.466), hsla(350deg, 71%, 40%, 0.315)), url(../images/twPortadaMob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CONTENIDO DE CONTACTO */
+.main__contacto {
+  margin-top: 80px;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.main__contacto .form__register {
+  width: 90%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7450980392);
+  padding: 30px;
+  border-radius: 4px;
+  color: #ffffff;
+  box-shadow: 7px 13px 37px #000;
+}
+.main__contacto .form__register h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #FFD700;
+}
+.main__contacto .form__register .controls {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.8274509804);
+  border-radius: 4px;
+  border: 1px solid #c6c8ce;
+  font-size: 1rem;
+  color: #00FA86;
+}
+.main__contacto .form__register label {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 2;
+  color: #FFED8A;
+}
+.main__contacto .form__register label a {
+  color: #00FA86;
+  text-decoration: none;
+}
+.main__contacto .form__register label a:hover {
+  color: #ff04d5;
+}
+.main__contacto .form__register label input {
+  margin-left: 20px;
+}
+.main__contacto .form__register .botons {
+  width: 100%;
+  height: none;
+  padding: 12px;
+  margin: 30px 0;
+  background: #41F876;
+  border-radius: 10px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main__contacto .form__register .botons:hover {
+  background-color: #ff04d5;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+@media (min-width: 576px) {
+  #contacto {
+    background-image: url(../images/twRegistro.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .main__contacto .form .form__register {
+    width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .main__contacto .form .form__register {
+    width: 650px;
+    height: 700px;
+    padding: 90px;
+    margin: none;
+    text-align: center;
+  }
+  .main__contacto .form .form__register h2 {
+    font-size: 1.75rem;
+  }
+  .main__contacto .form .form__register .controls {
+    width: 400px;
+  }
+  .main__contacto .form .form__register .botons {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,71 @@
+#contacto {
+    background: linear-gradient(to right, hsla(275, 90%, 20%, 0.466), hsla(350, 71%, 40%, 0.315)), url(../images/twPortadaMob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CONTENIDO DE CONTACTO */
+.main__contacto {
+    margin-top: 80px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    .form {
+        &__register {
+            width: 90%;
+            margin: auto;
+            background: #000000be;
+            padding: 30px;
+            border-radius: 4px;
+            color: #ffffff;
+            box-shadow: 7px 13px 37px #000;
+            h2 {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 50px;
+                color: $color-title;
+            }
+            .controls {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                background: #000000d3;
+                border-radius: 4px;
+                border: 1px solid #c6c8ce;
+                font-size: 1rem;
+                color: $color-text-btn;
+            }
+            label {
+                text-align: justify;
+                font-size: 1rem;
+                line-height: 2;
+                color: $color-p;
+                a{
+                    color: $color-text-btn;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-hover;
+                    }
+                }
+                input {
+                    margin-left: 20px;
+                }
+            }
+            .botons {
+                @include medidas (100%, none, 12px, 30px 0);
+                background: $color-button;
+                border-radius: 10px;
+                color: #000000;
+                text-transform: uppercase;
+                font-weight: 500;
+                cursor: pointer;
+                &:hover {
+                    background-color: $color-hover;
+                    color: #ffffff;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}

@@ -88,10 +88,17 @@
                 line-height: 50px;
                 border-radius: 5px;
                 .cta {
+                    display: inline-block;
+                    width: inherit;
                     color: #000000;
                     font-weight: 700;
                     text-transform: uppercase;
                     text-decoration: none;
+                    &:hover {
+                        color: #ffffff;
+                        background-color: $color-hover;
+                        transition: .5s;
+                    }
                 }
             }
             &:hover .front {
