@@ -18,7 +18,7 @@
     .main__contacto {
         .form {
             .form__register {
-                @include medidas (650px, 700px, 90px, none);
+                @include medidas (650px, 650px, 80px, none);
                 text-align: center;
                 h2 {
                     font-size: 1.75rem;

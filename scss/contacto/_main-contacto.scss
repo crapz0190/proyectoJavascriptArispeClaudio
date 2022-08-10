@@ -46,6 +46,7 @@
                     text-decoration: none;
                     &:hover {
                         color: $color-hover;
+                        transition: .5s;
                     }
                 }
                 input {
