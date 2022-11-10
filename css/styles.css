@@ -8,7 +8,6 @@
   outline: none;
   border: none;
   list-style-type: none;
-  color: #ffffff;
 }
 
 /* CONOCIENDO A LOS MIEMBROS DE LA BANDA */
@@ -39,6 +38,16 @@ body {
   height: 60px;
   z-index: 2;
 }
+.navbar .img-carrito {
+  width: 30px;
+}
+.navbar img {
+  width: 50px;
+}
+.navbar .img-desktop {
+  width: 120px;
+  height: 60px;
+}
 
 .navbar-dark, .navbar-toggler, .navbar-brand, .container-fluid {
   padding: 0;
@@ -51,10 +60,6 @@ body {
 .navbar-brand {
   margin: 0;
   margin-left: 20px;
-}
-
-.img-desktop {
-  height: 60px;
 }
 
 .navbar-toggler {
@@ -82,6 +87,71 @@ body {
 .container-fluid .collapse .nav-link:hover {
   color: #41F876;
   transition: 0.2s;
+}
+
+.info-card .precio {
+  font-size: 18px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-card .precio .descuento {
+  text-decoration: line-through !important;
+  font-size: 18px !important;
+  margin-top: 10px !important;
+}
+
+.info-card .precio span {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.submenu {
+  position: relative;
+  top: 10px;
+}
+
+.submenu #carrito {
+  display: none;
+  width: 350px;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: -100px;
+  top: 45px;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  min-height: 400px;
+  max-width: 600px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.066);
+}
+
+.table tbody#listaCarrito tr td {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+a.borrar-curso {
+  background-color: rgb(211, 100, 100);
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+a.borrar-curso:hover {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /* GRID AREA */
@@ -181,6 +251,68 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7411764706);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s 0.9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+}
+.modal__container {
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+.modal__container-img {
+  width: 90%;
+  max-width: 300px;
+}
+.modal__container-title {
+  font-size: 2.5rem;
+}
+.modal__container-paragraph {
+  margin-bottom: 10px;
+}
+.modal__container-close {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F26250;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color 0.3s;
+}
+.modal__container-close:hover {
+  color: #F26250;
+  background-color: #fff;
+}
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
 }
 
 .main {
@@ -411,6 +543,7 @@ body {
   .main__cards .main__card .main__link .cta:hover {
     color: #ffffff;
     background-color: #ff04d5;
+    border-radius: 5px;
     transition: 0.5s;
   }
   .main__cards .main__card:hover .front {
@@ -958,6 +1091,70 @@ body {
   }
   .main__contacto .form .form__register .botons {
     width: 400px;
+  }
+}
+/* TIENDA ONLINE */
+.main__tienda .title {
+  margin-top: 90px;
+  text-align: center;
+  color: #FFD700;
+}
+.main__tienda .info-card {
+  color: #000000;
+}
+.main__tienda .btn-info {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main__tienda .imagen-cs {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .navbar img {
+    width: 50px;
+  }
+  .submenu #carrito {
+    width: 375px;
+  }
+  .banner {
+    display: block;
+  }
+  .banner figure img {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .banner figure figcaption {
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: #FFED8A;
+  }
+  .main__tienda .title {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .banner {
+    display: block;
+  }
+  .banner figure img {
+    margin-top: 0px;
+  }
+  .navbar {
+    position: relative;
+    padding: 20px;
+  }
+  .navbar .container-fluid .bg {
+    background-color: rgba(3, 3, 3, 0);
+  }
+  .navbar .submenu:hover #carrito {
+    position: absolute;
+    right: 10px;
+  }
+  .navbar .nav-link {
+    margin-right: 50px;
   }
 }
 

@@ -6,6 +6,16 @@
     width: 100%;
     height: 60px;
     z-index: 2;
+    .img-carrito {
+        width: 30px;
+    }
+    img{
+        width: 50px;
+    }
+    .img-desktop {
+        width: 120px;
+        height: 60px;
+    }
 }
 
 .navbar-dark {
@@ -21,10 +31,6 @@
     @extend .navbar-dark;
     margin: 0;
     margin-left: 20px;
-}
-
-.img-desktop {
-    height: 60px;
 }
 
 .navbar-toggler {
@@ -53,4 +59,69 @@
 .container-fluid .collapse .nav-link:hover {
     color: $color-button;
     transition: 0.2s;
+}
+
+.info-card .precio {
+    font-size: 18px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-card .precio .descuento {
+    text-decoration: line-through!important;
+    font-size: 18px!important;
+    margin-top: 10px!important;
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.submenu {
+    position: relative;
+    top: 10px;
+}
+
+.submenu #carrito{
+    display: none;
+    width: 350px;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: -100px;
+    top:45px;
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    min-height: 400px;
+    max-width: 600px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.066);
+}
+
+.table tbody#listaCarrito tr td {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+a.borrar-curso {
+    background-color: rgb(211, 100, 100);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a.borrar-curso:hover {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }

@@ -1,0 +1,62 @@
+@media (min-width: 576px) {
+    .navbar {
+        img{
+            width: 50px;
+        }
+    }
+
+    .submenu #carrito{
+        width: 375px;
+    }
+
+    .banner {
+        display: block;
+        figure {
+            img {
+                width: 100%;
+                margin-top: 60px;
+            }
+            figcaption {
+                text-align: center;
+                margin-top: 5px;
+                letter-spacing: 1px;
+                color: $color-p;
+            }
+        }
+    }
+
+    .main__tienda {
+        .title {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        display: block;
+        figure {
+            img {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .navbar {
+        position: relative;
+        padding: 20px;
+
+        .container-fluid .bg {
+            background-color: #03030300;
+        }
+        .submenu:hover #carrito {
+            position: absolute;
+            right: 10px;
+        }
+
+        .nav-link {
+            margin-right: 50px;
+        }
+    }
+}
+
