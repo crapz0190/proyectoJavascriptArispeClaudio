@@ -206,6 +206,7 @@ a.borrar-curso:hover {
   color: #ffffff;
   background-color: #ff04d5;
   transition: 0.5s;
+  cursor: pointer;
 }
 .contents__icons {
   grid-row: 4/5;
@@ -941,6 +942,7 @@ a.borrar-curso:hover {
     font-size: 1.25rem;
   }
   .main__disco .grid-container .songs-list ol li {
+    text-transform: capitalize;
     font-size: 1.25rem;
     list-style: decimal;
     list-style-position: inside;
